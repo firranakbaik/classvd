@@ -1,0 +1,134 @@
+.awal{
+    color: white; background-color: red;
+    font-style: italic;
+}
+body{
+    background-color: black;
+}
+#kelas {
+    position: relative;
+    left: 385px;
+  border: 3px solid #73AD21;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  right: 0px;
+  border-radius: 50%;
+}
+a.linksaluran {
+    position: relative;
+    top: 139px;
+    left: 199px;
+    right: 0px;
+  display: inline-block; /* Ensures padding and border-radius apply properly */
+  padding: 10px 20px; /* Adds space inside the link */
+  background-color: #ff0000; /* Sets the background color */
+  color: #fff; /* Sets the text color */
+  text-decoration: none; /* Removes the underline */
+  border-radius: 25px; /* Makes the link rounded */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+a.linksaluran:hover {
+  background-color: green; /* Changes background color on hover */
+}
+h1.awal {
+    text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 220px;
+}
+
+.sidebar .user-profile {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.sidebar .user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar .user-name {
+  font-size: 16px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .user-name {
+  opacity: 1;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.content {
+  margin-left: 60px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar:hover + .content {
+  margin-left: 220px;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  .content {
+    margin-left: 0;
+  }
+}
+
